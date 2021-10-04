@@ -6,12 +6,13 @@ import './Home.css'
 
 const Home = () => {
     const [courses, setCourses] = useState([]);
-
+        // fetch data
     useEffect( () =>{
         fetch('./data.JSON')
         .then(res => res.json())
         .then( data => setCourses(data.courses));
     }, [])
+    // using array slice
     const slicedArray = courses.slice(0, 4);
     // console.log(slicedArray)
     return (

@@ -2,6 +2,7 @@ import React from 'react';
 import {Button, Card, Col } from 'react-bootstrap';
 
 const Course = (props) => {
+    // use of destructuring
     const {img, title, category, lesson, price, description} = props.course;
     const {rate, count} = props.course.rating;
     return (

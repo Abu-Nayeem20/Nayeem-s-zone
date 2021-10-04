@@ -4,6 +4,7 @@ import './FeatureCourses.css'
 
 const FeatureCourses = (props) => {
     // console.log(props.featureCourses.rating)
+    // use of destruturing
     const {img, title, category, lesson, price} = props.featureCourses;
     const {rate, count} = props.featureCourses.rating;
     return (

@@ -4,7 +4,7 @@ import Mentor from '../Mentor/Mentor';
 
 const Mentors = () => {
     const [mentors, setMentors] = useState([]);
-
+    //fetch data 
     useEffect( ()=>{
         fetch('./data.JSON')
         .then(res => res.json())
