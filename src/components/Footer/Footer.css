@@ -1,0 +1,30 @@
+
+.footer-img{
+    width: 300px;
+}
+.footer-left p{
+    padding: 10px 0;
+    text-align: left;
+}
+.footer-left .fab{
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(155, 7, 7);
+    margin: 0 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(155, 7, 7);
+    color: #fff;
+    font-size: 24px;
+    border-radius: 5px;
+    transition: .5s;
+}
+.footer-left .fab:hover{
+    background-color: transparent;
+    color: rgb(155, 7, 7);
+}
+.footer-bottom-text{
+    border-top: 1px solid gray;
+}

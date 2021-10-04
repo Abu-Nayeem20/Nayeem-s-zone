@@ -1,0 +1,23 @@
+
+.header-container{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+.logo{
+    width: 400px;
+}
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style: none;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 10px;
+    padding: 0 5px;
+    color: #972e6c;
+}

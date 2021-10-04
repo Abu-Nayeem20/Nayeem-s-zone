@@ -1,0 +1,18 @@
+.course-thumb{
+    height: 350px;
+}
+.category-name{
+    background-color: orangered;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #fff;
+}
+.star-icon,
+.book-icon{
+    color: orange;
+}

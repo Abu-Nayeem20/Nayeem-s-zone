@@ -1,0 +1,28 @@
+
+.caterogy-item{
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 5px 70px;
+    margin-bottom: 20px;
+    transition: .5s;
+}
+.caterogy-item .fas{
+    font-size: 40px;
+    color: blue;
+    padding: 5px;
+    transition: .5s;
+}
+.category-text h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+.category-text p{
+    line-height: 20px;
+}
+.caterogy-item:hover{
+    background-color: blue;
+    color: #fff;
+}
+.caterogy-item:hover .fas{
+    color: #fff;
+}
