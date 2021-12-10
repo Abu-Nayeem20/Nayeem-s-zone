@@ -6,7 +6,8 @@ const Course = (props) => {
     const {img, title, category, lesson, price, description} = props.course;
     const {rate, count} = props.course.rating;
     return (
-        <Col>
+        <div className="col-lg-6 mb-3">
+            <Col>
         <Card>
           <Card.Img variant="top" className='course-thumb' src={img} />
           <p className='category-name'>{category}</p>
@@ -24,6 +25,7 @@ const Course = (props) => {
           </Card.Body>
         </Card>
     </Col>
+        </div>
     );
 };
 

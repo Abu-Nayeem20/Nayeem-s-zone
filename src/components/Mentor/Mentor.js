@@ -6,7 +6,8 @@ const Mentor = (props) => {
     // console.log(props.mentor)
     const {img, title, name} = props.mentor;
     return (
-        <Col>
+        <div className="col-md-4">
+          <Col>
         <Card>
           <Card.Img variant="top" className='course-thumb' src={img} />
           <Card.Body> 
@@ -22,6 +23,7 @@ const Mentor = (props) => {
           </Card.Body>
         </Card>
     </Col>
+        </div>
     );
 };
 

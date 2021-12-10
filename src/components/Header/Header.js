@@ -1,42 +1,35 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../../nayeems-zone.png';
-import bgImage from '../../bg-2.jpg';
-import './Header.css'
-import Banner from '../Banner/Banner';
+import './Header.css';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 
 
 const Header = () => {
-    const bgStyle = {
-        backgroundImage:`url(${bgImage})`, 
-        backgroundPosition: 'center', 
-        backgroundSize: 'cover', 
-        backgroundRepeat: 'no-repeat'
-    };
     const activeStyle ={
         fontWeight: "bold",
         color: "red"
       };
 
     return (
-        <div style={bgStyle}>
-            <div className='header-container'>
-            <div>
-             <img className="logo" src={logo} alt="" />
-            </div>
-            <div>
-                <nav className='nav-menu'>
-                    <ul>
-                        <li><NavLink activeStyle={activeStyle} to="/home">Home</NavLink></li>
-                        <li><NavLink activeStyle={activeStyle}  to="/courses">Courses</NavLink></li>
-                        <li><NavLink activeStyle={activeStyle}  to="/mentors">Mentors</NavLink></li>
-                        <li><NavLink activeStyle={activeStyle}  to="/about">About</NavLink></li>
-                        <li><NavLink activeStyle={activeStyle}  to="/contact">Contact</NavLink></li>
-                    </ul>
-                </nav>
-            </div>
-            </div>
-            <Banner></Banner>
+        <div>
+            <div className="header-section">
+            <Navbar collapseOnSelect expand="lg" className="nav-area" sticky="top">
+            <Container>
+            <Navbar.Brand className='logo-area'><Nav.Link as={NavLink} to="/home"><img className='img-fluid' src={logo} alt="Abu Nayeem's Logo" /></Nav.Link></Navbar.Brand>
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-end'>
+                <Nav className="menu-items">
+                <Nav.Link activeStyle={activeStyle} as={NavLink} to="/home">Home</Nav.Link>
+                <Nav.Link activeStyle={activeStyle} as={NavLink} to="/courses">Courses</Nav.Link>
+                <Nav.Link activeStyle={activeStyle} as={NavLink} to="/mentors">Mentors</Nav.Link>
+                <Nav.Link activeStyle={activeStyle} as={NavLink} to="/about">About</Nav.Link>
+                <Nav.Link activeStyle={activeStyle} as={NavLink} to="/contact">Contact</Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
+            </Container>
+            </Navbar>
+        </div>
         </div>
     );
 };

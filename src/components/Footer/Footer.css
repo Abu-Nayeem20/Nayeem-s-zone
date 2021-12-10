@@ -28,3 +28,20 @@
 .footer-bottom-text{
     border-top: 1px solid gray;
 }
+.nav-menu ul li{
+    list-style: none;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: blue;
+}
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .footer-middle{
+       margin: 50px 0;
+    }
+}

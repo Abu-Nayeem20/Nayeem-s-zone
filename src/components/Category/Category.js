@@ -7,7 +7,7 @@ const Category = () => {
             <h2 className='py-5 fw-bold fs-2 text-dark'>Explore <br />
             Our Popular Courses</h2>
             <div className='row'>
-                <div className='col-3'>
+                <div className='col-lg-3 col-md-6'>
                     <div className='caterogy-item'>
                     <div>
                     <i className="fas fa-database"></i>
@@ -18,7 +18,7 @@ const Category = () => {
                     </div>
                     </div>
                 </div>
-                <div className='col-3'>
+                <div className='col-lg-3 col-md-6'>
                     <div className='caterogy-item'>
                     <div>
                     <i className="fas fa-palette"></i>
@@ -29,7 +29,7 @@ const Category = () => {
                     </div>
                     </div>
                 </div>
-                <div className='col-3'>
+                <div className='col-lg-3 col-md-6'>
                     <div className='caterogy-item'>
                     <div>
                     <i className="fas fa-business-time"></i>
@@ -40,7 +40,7 @@ const Category = () => {
                     </div>
                     </div>
                 </div>
-                <div className='col-3'>
+                <div className='col-lg-3 col-md-6'>
                     <div className='caterogy-item'>
                     <div>
                     <i className="fas fa-music"></i>
@@ -51,7 +51,7 @@ const Category = () => {
                     </div>
                     </div>
                 </div>
-                <div className='col-3'>
+                <div className='col-lg-3 col-md-6'>
                     <div className='caterogy-item'>
                     <div>
                     <i className="fas fa-database"></i>
@@ -62,7 +62,7 @@ const Category = () => {
                     </div>
                     </div>
                 </div>
-                <div className='col-3'>
+                <div className='col-lg-3 col-md-6'>
                     <div className='caterogy-item'>
                     <div>
                     <i className="fas fa-palette"></i>
@@ -73,7 +73,7 @@ const Category = () => {
                     </div>
                     </div>
                 </div>
-                <div className='col-3'>
+                <div className='col-lg-3 col-md-6'>
                     <div className='caterogy-item'>
                     <div>
                     <i className="fas fa-business-time"></i>
@@ -84,7 +84,7 @@ const Category = () => {
                     </div>
                     </div>
                 </div>
-                <div className='col-3'>
+                <div className='col-lg-3 col-md-6'>
                     <div className='caterogy-item'>
                     <div>
                     <i className="fas fa-music"></i>

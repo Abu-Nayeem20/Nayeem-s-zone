@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
-import './FeatureCourses.css'
+import './FeatureCourses.css';
 
 const FeatureCourses = (props) => {
     // console.log(props.featureCourses.rating)
@@ -8,7 +8,8 @@ const FeatureCourses = (props) => {
     const {img, title, category, lesson, price} = props.featureCourses;
     const {rate, count} = props.featureCourses.rating;
     return (
-    <Col>
+    <div className="col-md-6">
+        <Col>
         <Card>
           <Card.Img variant="top" className='course-thumb' src={img} />
           <p className='category-name'>{category}</p>
@@ -25,6 +26,7 @@ const FeatureCourses = (props) => {
           </Card.Body>
         </Card>
     </Col>
+    </div>
     );
 };
 

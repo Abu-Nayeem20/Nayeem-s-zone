@@ -1,11 +1,7 @@
 
-.banner-content{
-    display: flex;
-    justify-content: space-evenly;
-    /* padding-top: 100px; */
-}
 .bannger-img{
     width: 380px;
+    margin: 0 auto;
 }
 .bannger-img img{
     width: 100%;
@@ -31,4 +27,23 @@
 .btn-regular:hover{
     background-color: transparent;
     color: rgb(155, 7, 7);
+}
+
+
+/* Responsive */
+
+@media (max-width: 767px) {
+    .bannger-img{
+        width: 280px;
+        margin: 0 auto;
+    }
+    .banner-text{
+        font-size: 30px;
+        margin-top: 50px;
+    }
+    .btn-regular{
+        padding: 8px 30px;
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
 }
